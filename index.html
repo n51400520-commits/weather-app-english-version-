@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Guide</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Weather Guide</h1>
+
+    <form id="search-form">
+      <input id="city-input" type="text" placeholder="Enter a city" required>
+      <button type="submit">Search</button>
+    </form>
+
+    <section id="result" class="card hidden">
+      <h2 id="city-name"></h2>
+      <p id="temp"></p>
+      <p id="desc"></p>
+      <p id="humidity"></p>
+
+      <!-- Weather icon -->
+      <img src="FocusArea__Weather-02.jpg" alt="weather icon" width="100">
+
+      <p class="error hidden" id="error"></p>
+    </section>
+
+    <section class="history">
+      <h3>Recent Cities</h3>
+      <ul id="history-list"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
